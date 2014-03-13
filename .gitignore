@@ -1,1 +1,16 @@
-target/
+*.bak
+*.diff
+*.log
+*.patch
+*.tmp
+*~
+
+# For Maven
+/target
+
+# For IDE
+.project
+.classpath
+.settings/*
+.idea/*
+*.iml
