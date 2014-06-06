@@ -32,6 +32,8 @@
       <property name="scope" value="protected"/>
       <property name="checkEmptyJavadoc" value="true"/>
       <property name="checkFirstSentence" value="false"/>
+      <!-- illegal report in <dl><dt><dd> -->
+      <property name="checkHtml" value="false"/>
     </module>
     <module name="LocalFinalVariableName">
       <property name="format" value="^(this\$)?[a-z][a-zA-Z0-9]*$"/>
