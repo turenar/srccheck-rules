@@ -7,7 +7,7 @@
 	<groupId>jp.syuriken.snsw</groupId>
 	<artifactId>srccheck-rules</artifactId>
 	<name>Source Checker Rules</name>
-	<version>1</version>
+	<version>3</version>
 	<description>Source Checker Rules</description>
 	<url>http://github.com/turenar/elnetw</url>
 	<packaging>jar</packaging>
@@ -24,4 +24,29 @@
 		<system>Google Code</system>
 		<url>https://github.com/turenar/elnetw/issues</url>
 	</issueManagement>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>synergian-repo</id>
+			<url>https://raw.github.com/synergian/wagon-git/releases</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>ar.com.synergian</groupId>
+				<artifactId>wagon-git</artifactId>
+				<version>0.2.3</version>
+			</extension>
+		</extensions>
+	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>Github Repo</name>
+			<url>git:master://git@github.com:turenar/maven-repo.git</url>
+		</repository>
+	</distributionManagement>
 </project>
