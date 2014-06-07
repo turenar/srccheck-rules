@@ -87,7 +87,8 @@
       <property name="severity" value="ignore"/>
     </module>
     <module name="MagicNumber">
-      <property name="ignoreNumbers" value="-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 256, 1024, 4096, 65536"/>
+      <property name="ignoreNumbers" value="-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 255, 256, 1024, 4096, 65280, 65536"/>
+      <!-- 65280 = 0xff00 -->
 		<property name="ignoreHashCodeMethod" value="true"/>
     </module>
     <module name="MissingSwitchDefault"/>
@@ -170,7 +171,7 @@
   <module name="Translation"/>
   <module name="SuppressionCommentFilter"/>
   <module name="SuppressWithNearbyCommentFilter">
-    <property name="commentFormat" value="CHECKSTYLE IGNORE THIS LINE"/>
+    <property name="commentFormat" value="CS-IGNORE"/>
     <property name="checkFormat" value=".*"/>
     <property name="influenceFormat" value="0"/>
   </module>
